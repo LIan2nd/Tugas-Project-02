@@ -101,7 +101,7 @@ include_once 'templates/sidebar.php';
                     <div class="small-box bg-danger">
                         <div class="inner">
                             <?php
-                            $sqljual = "SELECT COUNT(qty) FROM pesanan";
+                            $sqljual = "SELECT SUM(qty) FROM pesanan";
                             $jual = $dbh->query($sqljual)->fetchColumn();
                             ?>
                             <h3>
