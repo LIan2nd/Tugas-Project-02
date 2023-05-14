@@ -91,26 +91,26 @@
     <script src="admin/dist/js/adminlte.min.js"></script>
 
     <script>
-        $(document).ready(function () {
-            $('form').submit(function (event) {
-                // mengambil nilai input email dan password
-                var email = $('input[name="email"]').val();
-                var password = $('input[name="password"]').val();
+    $(document).ready(function() {
+        $('form').submit(function(event) {
+            // mengambil nilai input email dan password
+            var email = $('input[name="email"]').val();
+            var password = $('input[name="password"]').val();
 
-                // validasi input email dan password
-                if (email == '') {
-                    alert('Email harus diisi');
-                    event.preventDefault();
-                } else if (password == '') {
-                    alert('Password harus diisi');
-                    event.preventDefault();
-                }
-            });
+            // validasi input email dan password
+            if (email == '') {
+                alert('Email harus diisi');
+                event.preventDefault();
+            } else if (password == '') {
+                alert('Password harus diisi');
+                event.preventDefault();
+            }
         });
+    });
 
-        function admin() {
-            alert('Email : admin@login.com password : admin123')
-        }
+    function admin() {
+        alert("Lihat di file php bernama 'progLogin.php'")
+    }
     </script>
 
 
