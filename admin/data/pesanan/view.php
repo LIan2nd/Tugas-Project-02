@@ -77,7 +77,8 @@ $datas = $st->fetch();
                                         <div class="info-box-content">
                                             <span class="info-box-text text-center text-muted">Total Harga</span>
                                             <span class="info-box-number text-center text-muted mb-0">Rp.
-                                                <?= number_format($datas['total_harga'], 0, ',', '.'); ?>,-</span>
+                                                <?= number_format($datas['total_harga'], 0, ',', '.'); ?>,-
+                                            </span>
                                         </div>
                                     </div>
                                 </div>
@@ -93,6 +94,9 @@ $datas = $st->fetch();
                             </div>
                         </div>
                         <div class="text-muted">
+                            <p>Alamat Pengiriman :
+                                <?= $datas['alamat_pemesan'] ?>
+                            </p>
                             <p class="text-sm">Company
                                 <b class="d-block">Peruta Inc.</b>
                             </p>
